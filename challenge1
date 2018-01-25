@@ -1,0 +1,69 @@
+function downRepeat(nSteps) {
+  var steps = 0;
+  	while (steps < nSteps) {
+      down();
+      setColor("red");
+    steps = steps + 1
+    }
+}
+
+function rightRepeat(nSteps) {
+  var steps = 0;
+  	while (steps < nSteps) {
+      right();
+      setColor("red");
+    steps = steps + 1
+    }
+}
+
+function upRepeat(nSteps) {
+  var steps = 0;
+  	while (steps < nSteps) {
+      up();
+      setColor("red");
+    steps = steps + 1
+    }
+}
+
+function leftRepeat(nSteps) {
+  var steps = 0;
+  	while (steps < nSteps) {
+      left();
+      setColor("red");
+    steps = steps + 1
+    }
+}
+
+function downMove(nSteps) {
+  var steps = 0;
+  	while (steps < nSteps) {
+      down();
+      steps = steps + 1
+    }
+}
+
+rightRepeat(9);
+downRepeat(4);
+leftRepeat(9);
+upRepeat(9);
+
+downMove(6);
+
+rightRepeat(15);
+downRepeat(2);
+leftRepeat(15);
+upRepeat(2);
+
+downMove(6);
+
+rightRepeat(4);
+downRepeat(8);
+leftRepeat(4);
+upRepeat(8);
+
+downMove(10);
+
+rightRepeat(30);
+downRepeat(15);
+leftRepeat(30);
+upRepeat(15);
