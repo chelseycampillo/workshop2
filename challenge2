@@ -1,0 +1,27 @@
+function rightThree() {
+	right();
+  right();
+  right();
+}
+
+function move(nSteps, direction) {
+  var steps = 0;
+  	while (steps < nSteps) {
+      direction();
+      setColor("red");
+      steps = steps + 1
+    }
+}
+
+function repeatMove(nTimes) {
+  var times = 0;
+  	while (times < nTimes) {
+  		move(20, down);
+			rightThree();
+			move(20, up);
+			rightThree();
+      times = times + 1
+    }
+}
+
+repeatMove(5);
